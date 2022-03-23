@@ -1,4 +1,4 @@
-FROM phusion/baseimage:bionic-1.0.0
+FROM ghcr.io/linuxserver/baseimage-ubuntu:bionic
 
 # set version label
 ARG UNRAR_VERSION=6.1.4
