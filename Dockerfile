@@ -1,4 +1,4 @@
-FROM gphusion/baseimage:bionic-1.0.0
+FROM phusion/baseimage:bionic-1.0.0
 
 # set version label
 ARG UNRAR_VERSION=6.1.4
