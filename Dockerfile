@@ -78,8 +78,7 @@ RUN \
   apk del --purge \
     build-dependencies && \
   rm -rf \
-    /tmp/* \
-    $HOME/.cache
+    /tmp/* 
 
 # add local files
 COPY root/ /
