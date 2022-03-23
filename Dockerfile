@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15
+FROM gphusion/baseimage:bionic-1.0.0
 
 # set version label
 ARG UNRAR_VERSION=6.1.4
