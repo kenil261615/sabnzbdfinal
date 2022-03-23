@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu:bionic
+FROM ghcr.io/linuxserver/baseimage-alpine:3.15
 
 # set version label
 ARG UNRAR_VERSION=6.1.4
@@ -71,6 +71,15 @@ RUN \
     /app/nzbnotify --strip-components=1 && \
   cd /app/nzbnotify && \
   pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.15/ -r requirements.txt && \
+  echo "**** cleanup ****" && \
+  ln -s \
+    /usr/bin/python3 \
+    /usr/bin/python && \
+  apk del --purge \
+    build-dependencies && \
+  rm -rf \
+    /tmp/* \
+    $HOME/.cache
 
 # add local files
 COPY root/ /
