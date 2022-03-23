@@ -2,4 +2,5 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: exec python3 /app/sabnzbd/SABnzbd.py && --config-file /config --server "$FAMILY" -p $PORT
+  web: exec python3 /app/sabnzbd/SABnzbd.py -p $PORT
+#   web: exec python3 /app/sabnzbd/SABnzbd.py && --config-file /config --server "$FAMILY" -p $PORT
