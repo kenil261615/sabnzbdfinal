@@ -76,9 +76,7 @@ RUN \
     /usr/bin/python3 \
     /usr/bin/python && \
   apk del --purge \
-    build-dependencies && \
-  rm -rf \
-    /tmp/* 
+    build-dependencies
 
 # add local files
 COPY root/ /
