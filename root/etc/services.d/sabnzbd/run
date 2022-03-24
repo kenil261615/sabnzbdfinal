@@ -3,7 +3,7 @@
 FAMILY=::
 
 if [ "$HAS_IPV6" = "false" ]; then
-    FAMILY=localhost
+    FAMILY=0.0.0.0
 fi
 
 exec \
