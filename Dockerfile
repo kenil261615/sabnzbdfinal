@@ -11,7 +11,7 @@ LABEL maintainer="thespad"
 # environment settings
 ENV HOME="/config" \
 PYTHONIOENCODING=utf-8
-
+ENV PORT=8080
 RUN \
   echo "**** install packages ****" && \
   apk add -U --update --no-cache --virtual=build-dependencies \
