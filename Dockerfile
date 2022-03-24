@@ -11,7 +11,7 @@ LABEL maintainer="thespad"
 # environment settings
 ENV HOME="/config" \
 PYTHONIOENCODING=utf-8
-ENV PORT=8080
+# ENV PORT=8080
 RUN \
   echo "**** install packages ****" && \
   apk add -U --update --no-cache --virtual=build-dependencies \
@@ -85,7 +85,7 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-# EXPOSE 5000
+EXPOSE $PORT
 VOLUME /config
 
 CMD docker run linuxserver/sabnzbd
