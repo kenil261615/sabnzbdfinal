@@ -87,3 +87,5 @@ COPY root/ /
 # ports and volumes
 # EXPOSE 5000
 VOLUME /config
+
+CMD exec python3 /app/sabnzbd/SABnzbd.py && --config-file /config --server "$FAMILY" -p $PORT
