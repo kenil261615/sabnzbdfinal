@@ -1,8 +1,8 @@
 {
-    "name": "Whoogle Search",
-    "description": "A lightweight, privacy-oriented, containerized Google search proxy for desktop/mobile that removes Javascript, AMP links, tracking, and ads/sponsored content",
-    "repository": "https://github.com/benbusby/whoogle-search",
+    "name": "sabnzbdfinal",
+    "description": "sabnzbdfinal build",
+    "repository": "https://github.com/kenil261615/sabnzbdfinal",
     "logo": "https://raw.githubusercontent.com/benbusby/whoogle-search/master/app/static/img/favicon/ms-icon-150x150.png",
-    "keywords": ["search", "metasearch", "flask", "docker", "heroku", "adblock", "degoogle", "privacy"],
+    "keywords": ["sabnzbdfinal", "docker", "heroku", "sabnzbd"],
     "stack": "container"
 }
