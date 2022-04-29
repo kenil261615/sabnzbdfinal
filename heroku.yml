@@ -1,6 +1,6 @@
 build:
   docker:
-    worker: Dockerfile
+    web: Dockerfile
 run:
 # #   web: exec python3 /app/sabnzbd/SABnzbd.py -p $PORT
-  worker: exec python3 /app/sabnzbd/SABnzbd.py --config-file /config --server localhost:$PORT
+  web: exec python3 /app/sabnzbd/SABnzbd.py --config-file /config --server localhost:$PORT
